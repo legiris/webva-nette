@@ -1,0 +1,12 @@
+RewriteEngine On
+
+php_value max_input_vars 5000
+php_value date.timezone "Europe/Prague"
+
+RewriteRule (.*) /www/$1 [QSA,L]
+
+#Header set Access-Control-Allow-Headers "accept, content-type, x-wsse"
+#Header set Access-Control-Allow-Credentials "true"
+#Header set Access-Control-Allow-Methods "GET, POST, DELETE"
+
+#Header set Access-Control-Allow-Origin "http://localhost:9000"
